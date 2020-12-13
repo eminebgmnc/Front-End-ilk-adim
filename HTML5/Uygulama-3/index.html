@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Program</th>
+                <th>Pazartesi</th>
+                <th>Salı</th>            <!--Tablonun baş kısmı ve baş kısım <thead> ile yapılır-->
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+            </tr>
+        </thead>
+        <tbody> <!--Tablonun gövde kısmı -->
+        <tr bgcolor="pink">
+            <td>08:00</td>
+            <td colspan="5" style="text-align:center ;">HAZIRLIK</td>  <!-- Tablonun 1.satırı ve 5 sütun Colspan etiketi ile birleştirildi-->
+        </tr>
+        <tr bgcolor="blue">
+            <td>08:00-09:00</td>
+            <td colspan="5" style="text-align:center ;">YOLCULUK</td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td>15:00-18:00</td>
+            <td colspan="5"style="text-align:center">OKUL</td>
+        </tr>
+        <tr bgcolor="purple">
+            <td>18:00-21:00</td>
+            <td rowspan="3">EV</td>
+            <td rowspan="2">DERSHANE</td>
+            <td rowspan="3">BULUŞMA</td>
+            <td rowspan="2">DERSHANE</td>
+            <td rowspan="2" style="text-align: center;">GEZME</td>
+
+        </tr>
+        <tr bgcolor="green">
+            <td>21:00-23:00</td>
+            
+        </tr>
+        <tr bgcolor="yellow">
+            <td>23:00-24:00</td>
+            <td>EV</td>
+            <td colspan="2">TEST ÇÖZME</td>
+        </tr>
+        <tr bgcolor="turquose">
+
+            <td>24:00-00:00</td>
+            <td colspan="5" style="text-align: center;">UYUMA</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

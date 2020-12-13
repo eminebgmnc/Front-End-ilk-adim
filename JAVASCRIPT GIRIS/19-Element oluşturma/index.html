@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+
+    </div>
+    <script>
+        var menu= document.getElementById("menu");
+        var a= document.createElement("a");//menunun altına a etiketi oluşturuldu
+        menu.appendChild(a);//menuya a etiketi eklendi
+        a.href="https://www.kaanacademy.com";
+        var aText=document.createTextNode("Kaan Academy'e git");//sayfada görünmesi için text yani alan oluşturuldu.
+        a.appendChild(aText); //text kısmı a etiketine eklendi
+    </script>
+</body>
+</html>

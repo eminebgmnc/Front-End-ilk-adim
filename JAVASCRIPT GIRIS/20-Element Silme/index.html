@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Anasayfa</li>
+            <li>Hakkımızda</li>
+            <li>İletişim</li>
+            <li>Vizyonumuz</li>
+        </ul>
+    </nav>
+    <script>
+        var navMenu=document.getElementsByTagName("nav")[0];//nava ulaşıldı
+        var sil =navMenu.childNodes[1].childNodes[5]; //navın birinci çocuğu yani ul'a ulaşıldı ve ul'un beşinci(boşluklar dahil) çocuğuna ulaşıldı
+        navMenu.childNodes[1].removeChild(sil);//silinme işlemi yapıldı.
+    </script>
+</body>
+</html>

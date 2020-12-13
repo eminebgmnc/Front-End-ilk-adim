@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+ <style>
+     body{
+         margin: 0;
+     }
+     div{
+         height: 300px;
+         width: 300px;
+         background: red;
+         text-align: center;
+     }
+ </style>
+</head>
+<body>
+    <button>0</button>
+    <button>1</button>
+    <button>2</button>
+    <div>0</div>
+    <script>
+       // $("div").click(function(event){
+      //      $("div").text(event.pageX+" "+event.pageY);//Sayfada tıkladığımız yerin x y düzlemini gösterir.
+       // });
+       $("button").eq(0).click({isim:"Emine",yas:25},function(event){
+           $("div").text(event.data.isim+" "+event.data.yas);
+       }
+       )
+    </script>
+</body>
+</html>

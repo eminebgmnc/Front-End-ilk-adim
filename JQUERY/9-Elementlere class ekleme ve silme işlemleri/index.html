@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<style>
+    div{
+        height: 200px;
+        width:200px;
+    }
+    .red{
+        background: red;
+    }
+    .green{
+        background: green;
+        
+    }
+</style>
+</head>
+<body>
+    <div class="red">
+
+    </div>
+    <script>
+        $("div").addClass("green")//green clasını ekledik.
+        $("div").removeClass("red");//red clasını sildik.
+
+    </script>
+</body>
+</html>

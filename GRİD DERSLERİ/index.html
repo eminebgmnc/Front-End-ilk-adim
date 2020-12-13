@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            /*grid-template-rows: 200px 300px 200px;
+            grid-template-columns: 200px auto 200px;*/
+            grid-template:200px 200px 200px /200px repeat(2,auto);
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            /*grid-gap:5px 10px; Tek satırda yazmaya yarar gap boşluk bırakmak demek*/
+             
+             grid-template-areas: 
+             "A B C"
+             "D E F"
+             "G M N"
+        }
+        .container>div{
+            text-align: center;
+            font-size: 24px;
+        }
+        .box1{
+            background-color: chartreuse;
+            /*grid-column-start: 1;
+            grid-column-end: span 3;
+            grid-column: 1/ span 3;/* 1 den başla üç sütun kapla*/
+            grid-area: A;
+        }
+        .box2{
+            background-color:chocolate;
+            grid-area: B;
+        }
+        .box3{
+            background-color:cyan;
+            grid-area: C;
+        }
+        .box4{
+            background-color:darkblue;
+            grid-area: D;
+        }
+        .box5{
+            background-color: purple;
+            grid-area: E;
+        }
+        .box6{
+            background-color: red;
+           /* grid-row-start: 2;
+            grid-row-end: span 2; 2.satırdan başla 2.satır kapla
+            grid-column-start: 1;
+            grid-column-end: span 
+            grid-row: 2/span 2;
+            grid-column: 1/span 3;*/
+            grid-area: 2/1/ span 2/ span 3;/*2.satırdan başla 2 satır yer kapla,1.sütundan başla 3 sütunluk yer kapla*/
+            grid-area: F;
+       }
+        .box7{
+            background-color:yellow;
+            grid-area: G;
+        }
+        .box8{
+            background-color:darkgreen;
+            grid-area: M;
+        }
+        .box9{
+            background-color:palevioletred;
+            grid-area: N;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+    </div>
+</body>
+</html>

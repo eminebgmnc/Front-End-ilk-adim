@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function insan(isim,yas,gozrengi){
+            this.isim=isim;
+            this.yas=yas;
+            this.gozrengi=gozrengi;
+            this.isimDegistir=function(yenisim){
+                this.isim=yenisim;
+            }
+            this.dogumyılı=Dogumyılıhesapla;
+        }
+        function Dogumyılıhesapla(){
+            return 2020-this.yas;
+        }
+        var i1= new insan("Emine",24,"Ela");
+        document.write(i1.isim+ " " +i1.yas+ " "+i1.gozrengi+ "<br>");
+        document.write(i1.isim+ " " +i1.yas+ " "+i1.gozrengi+" "+i1.dogumyılı());
+        i1.isimDegistir("Barış");
+        document.write(i1.isim+ " " +i1.yas+ " "+i1.gozrengi+" "+i1.dogumyılı());
+
+    </script>
+</body>
+</html>

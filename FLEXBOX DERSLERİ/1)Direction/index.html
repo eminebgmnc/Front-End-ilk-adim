@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1{
+            height: 700px;
+            border: 1px solid blueviolet;
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end/*Yni kutuları sütüna sırala*/
+            /* flex direction: row kutuları satırlara sıralar.   row reserve ise terstren sıralar.*/
+            /*flex-wrap: wrap; /*Taşınca altta kalnı başka yere alıyor*/
+            /*justify-content:flex-start; 
+            align-content: flex-start; /*Kutuların sağa sola alta üste döndürülmesini sağlar content tüm hepsi demek*/
+           /* align-items:center ; bir sütun veya bir satırı değişmek isterek ıtems kullanılır.*/
+           /*flex-flow:wrap direction hem wrap hep direction özelliği sağlıyor.*/
+        }
+        .container-1 div{
+            border: 1px solid gray;
+            padding: 5px;
+            
+        }
+        .box1{
+            order:2;
+
+        }
+        .box2{
+            order: 4;
+            align-self: flex-end; /*tek kutunun kendini hizalaamsı*/
+            
+        }
+        .box3{
+           order:1; 
+           align-self: center;
+        }
+        .box4{
+          order: 3; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-1">
+        <div class="box1">
+            <h4> Birinci kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box2">
+            <h4>İkinci kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box3">
+            <h4> Üçüncü kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box4">
+            <h4> Dördüncü kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+<!--div.container-1>(div.box>h4{kutu}+p{Lorem ipsum dolor sit amet consectetur adipisicing.})*3-->
+</html>

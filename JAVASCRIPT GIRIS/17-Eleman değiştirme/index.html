@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 250px;
+        }
+        button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="img/coder.jpg" alt="" title="coder">
+    <button onclick="resmiDegiştir()">Resmi değiştir</button>
+    <script>
+        function resmiDegiştir(){
+            var logomuz =document.getElementById("logo");
+            logomuz.title="laptop"
+        logomuz.src= "img/laptop.jpg";
+        }
+       //Yaptığımız şey html sayfasındaki resmi değiştirmek
+    </script>
+</body>
+</html>

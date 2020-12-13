@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function selamver(){
+            document.write("Selamınaleyküm Emoş")
+        }
+        selamver();*/
+
+        /*PARAMETRE ALMIŞ HALİ
+        function selamver(isim){
+            document.write(isim+"Selamınaleyküm <br>")
+        }
+        selamver("emine");*/
+        /*ÇİFT PARAMETRE ALMA
+        function selamver(isim1,isim2){
+            document.write(isim1+"ve"+isim2+ "Selamınaleyküm")
+        }
+        selamver("Emine","Barış");*/
+       
+       /* function yasihesapla(isim,dogumtarihi){
+            document.write(isim+" "+(2019-dogumtarihi+ "yaşındadır <br>"));
+        }
+    yasihesapla("Emine",1996);
+    yasihesapla("Barış",1995);*/
+function tekmiCiftmi(sayi){
+    if(sayi%2==0){
+        return "Çift sayıdır";
+    }
+    else{
+        return "Tek sayıdır";
+    }
+}
+  for(var i=0;i<20;i++){
+      document.write(i+ " sayısı "+tekmiCiftmi(i)+"<br>");
+  }
+
+
+    </script>
+</body>
+</html>

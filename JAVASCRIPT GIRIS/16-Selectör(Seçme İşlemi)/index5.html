@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bolum1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p><p>
+            Lorem ipsum dolor sit amet.
+        </p>
+ </div>
+ <script>
+    // var paragraf=document.getElementsByTagName("p");
+  //   paragraf[1].nextSibling.innerHTML="<b> Burası değiştirildi</b>";//nextspling seçilenden sonraki eleman demek
+  var divimiz=document.getElementsByClassName("bolum1")[0];
+  for( var i=0; divimiz.childElementCount;i++){
+      divimiz.getElementsByTagName("p")[i].innerHTML="Değiştirildi";
+
+  }
+ </script>
+</body>
+</html>

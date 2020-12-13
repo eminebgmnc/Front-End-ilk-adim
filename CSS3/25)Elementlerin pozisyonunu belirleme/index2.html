@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            height: 200px;
+            width: 50%;
+            border: solid blue;
+        }
+        .red{
+            height: 100px;
+            width: 100%;
+            background: red;
+        }
+        .yellow{
+            height:100px;
+            width: 25%;
+            background: yellow;
+        }
+        .relative{
+            position:relative;
+
+        }
+        .absolute{
+            position: absolute;
+        }
+        .purple{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="purple relative">
+        <div class="yellow absolute" ></div>
+    </div>
+    <div class="yellow absolute"></div>
+    <div class="red absolute"></div>
+</body>
+</html>

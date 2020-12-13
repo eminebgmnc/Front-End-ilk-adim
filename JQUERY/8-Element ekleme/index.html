@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="p1">3 </p>
+    <script>
+       /* $("#p1").prepend("2 ")//başa eklemek demek
+        $("#p1").prepend("1 ")
+        $("#p1").append("4 ")//sona eklemek 
+        $("#p1").append("5 ")
+        //append ve prepend içeriğe ekler*/
+
+       // $("#p1").before("<h1>Paragraf</h1>");
+     //  $("#p1").after("<h2>paragraf</h2>");
+        //before ve after etiketin önce veya sonrasına ekleme işlemi yapıyor.
+        var yeniParagraf=$("<p></p>").html("<b> Paragraf 2</b>");//p etiketi ile paragraf oluşturduk ve sonra paragrafı öncesine ekledik
+        $("#p1").before(yeniParagraf);
+    </script>
+</body>
+</html>

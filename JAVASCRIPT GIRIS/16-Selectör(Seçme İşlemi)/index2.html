@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <script>
+        var header= document.getElementsByTagName("header");
+        for(var i=0;i<4;i++){
+            header[0].innerHTML +="<p></p>";
+        }
+        var headercocuklari=header[0].childNodes;
+        for(var i=0;i<headercocuklari.length;i++){
+            headercocuklari[i].innerHTML="p"+i;
+        }
+
+    </script>
+</body>
+</html>

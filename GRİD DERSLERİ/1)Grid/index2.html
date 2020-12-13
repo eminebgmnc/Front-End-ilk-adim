@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template: repeat(4,200px)/3fr 1fr;
+            grid-template-areas: 
+            "header header"
+            "menu menu"
+            "main sidebar"
+            "footer footer"
+        }
+        .header{
+            grid-area: header;
+            background-color: purple;
+        }
+        .menu{
+            grid-area: menu;
+            background-color: yellow;
+        }
+        .main{
+            grid-area: main;
+            background-color: olive;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: orangered;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">ANASAYFA</div>
+        <div class="menu">MENÜ
+            <ul>
+                <li> <a href="">ANASAYFA</a></li>
+                <li> <a href="">HAKKIMIZDA</a> </li>
+                <li> <a href="">İLETİŞİM</a> </li>
+                <li> <a href="">BLOG</a> </li>
+            </ul>
+        </div>
+        <div class="main"></div>
+        <div class="sidebar"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

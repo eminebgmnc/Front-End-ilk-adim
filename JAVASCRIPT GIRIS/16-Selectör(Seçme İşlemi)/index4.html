@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bolum1"> 
+
+    </div>
+    <script>
+        var bolum1cocuk=document.getElementsByClassName("bolum1")[0];
+        if(bolum1cocuk.hasChildNodes()){//çocuk var mı yokmu kontrol ediyoruz.
+            document.body.innerHTML +="ÇOCUK VAR";
+
+        }
+        else{
+            document.body.innerHTML +="ÇOCUK YOK";
+        }
+    </script>
+</body>
+</html>

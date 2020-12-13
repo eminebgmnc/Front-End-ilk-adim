@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!-- link rel= "stylesheet" href="style.css" html sayfasına css dosyalarını ekledik-->
+<style>
+    .listeElemani{
+        margin-left: 10px;
+        background: white;
+        color: red;
+        border: none;
+        cursor:pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>Yapılacaklar listesi</h1>
+    <input type="text" placeholder="yapılacakları giriniz.">
+    <button id="eklemeButonu">Ekle</button>
+    <ol id="Listemiz"></ol>
+    
+    <script>
+    //<script src="todolist.js">//html sayfasına javascript kodları eklendi
+        $(function(){
+            $("eklemeButonu").on("click",function(){
+                var inputDeger=$("input").val();
+              if(inputDeger !=""){
+                  var listeItem=$("<li></li>").text(inputDeger);
+                  $(listeItem).append("<button class=\"listeElemani\">X</button>");
+                  $("#Listemiz").append(listeItem);
+                  $("input").val("");
+                  $(".listeElemani").on("click",function(){
+                      $(this).parent().remove();
+
+                  });
+
+              }
+            });
+        });
+    </script>
+</body>
+</html>

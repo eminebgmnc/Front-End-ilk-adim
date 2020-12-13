@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <style>
+      p{
+          text-align: center;
+          padding: 10px;
+          cursor: pointer;
+          background: chartreuse;
+          color: black;
+      }
+      div{
+          background: cyan;
+          color: white;
+      }
+  </style>
+</head>
+<body>
+    <p>Divi Aç kapat</p>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatem beatae et modi qui corporis nihil iste magni eos suscipit quas, in obcaecati doloribus necessitatibus fugit eum. Animi, quia inventore.
+    </div>
+    <script>
+        $(function(){
+            $("p").click(function(){
+                $("div").toggle(1000);//Eğer açıksa kapatır kapalıysa açar.
+            });//fade ın açar fade out kapatır hepsini
+            //slide up yukarı doğru kapatır.
+            //slide down aşağı doğru kapatır.
+        });
+    </script>
+</body>
+</html>

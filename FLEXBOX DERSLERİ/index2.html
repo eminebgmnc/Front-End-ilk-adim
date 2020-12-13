@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1{
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;/*Yni kutuları sütüna sırala*/
+            /* flex direction: row kutuları satırlara sıralar.   row reserve ise terstren sıralar.*/
+            flex-wrap: wrap; /*Taşmaları önlüyor wrap diyince taşan yerleri boşluklara kaydırıyor.RESPONDİVE TASARIM için oldukça önemli*/
+        }
+        .container-1 div{
+            border: 1px solid gray;
+            padding: 5px;
+            flex-basis: 15%;
+            
+        }
+        .box1{
+            flex-shrink: 0;/*sen kendini koru demek..*/
+            flex-grow: 1;
+
+        }   
+        
+    
+        .box2{
+            flex-shrink: 0;
+            flex-grow: 3;
+
+        }   
+    
+        .box3{
+            flex-shrink: 0;
+
+        }   
+    
+        .box4{
+            flex-shrink: 0;
+
+        }   
+        
+        
+        
+         </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box1">
+            <h4> Birinci kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box2">
+            <h4>İkinci kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box3">
+            <h4> Üçüncü kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box4">
+            <h4> dördüncü kutu</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--<input class="inputCSS" type="text" value="Bir isim giriniz">
+    <script>
+        var input=document.getElementsByClassName("inputCSS")[0];
+        input.onchange=function(){
+            input.value=input.value.toUpperCase();
+        };
+    </script>-->
+<div id="div1">
+    Emine Bağmancı
+</div>
+<script>
+    var divimiz =document.getElementById("div1");
+    divimiz.onmouseover=function(){//onmouseover mouse üzerine gelince demek
+        divimiz.innerHTML="mouse üzerine geldi";
+    };
+    divimiz.onmouseout=function(){
+        divimiz.innerHTML="Emine Bağmancı";
+    }
+</script>
+</body>
+</html>
